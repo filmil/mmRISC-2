@@ -62,3 +62,6 @@ FPGA/L2_OOC/clockInfo.txt
 FPGA/L2_OOC/dfx_runtime.txt
 FPGA/FPU_OOC/clockInfo.txt
 FPGA/FPU_OOC/dfx_runtime.txt
+
+# Bazel
+bazel-*

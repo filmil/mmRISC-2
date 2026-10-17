@@ -1,0 +1,75 @@
+# SPDX-License-Identifier: Apache-2.0
+
+package(default_visibility = ["//visibility:public"])
+
+filegroup(
+    name = "top_srcs",
+    # do not sort
+    srcs = [
+        "xilinx_prims.sv",
+        "CPU/CPU_DBG/DBG_CDC/DBG_CDC.sv",
+        "CPU/CPU_DBG/DBG_CJTAG/DBG_CJTAG.sv",
+        "CPU/CPU_DBG/DBG_DTM/DBG_DTM.sv",
+        "CPU/CPU_DBG/DBG_DM/DBG_DM.sv",
+        "CPU/CPU_DBG/DBG_HART_STUB/DBG_HART_STUB.sv",
+        "CPU/CPU_DBG/DBG_BUSMST/DBG_BUSMST.sv",
+        "CPU/CPU_DBG/CPU_DBG/CPU_DBG.sv",
+        "CPU/CPU_DBG/DBG_CACHE/DBG_CACHE.sv",
+        "CPU/CPU_CACHE/CACHE_TAG_ARRAY/CACHE_TAG_ARRAY.sv",
+        "CPU/CPU_CACHE/CACHE_DATA_ARRAY/CACHE_DATA_ARRAY.sv",
+        "CPU/CPU_L2/L2_TAG_ARRAY.sv",
+        "CPU/CPU_L2/CPU_L2.sv",
+        "CPU/CPU_CACHE/ICACHE/ICACHE.sv",
+        "CPU/CPU_CACHE/DCACHE/DCACHE.sv",
+        "CPU/CPU_CACHE/CACHE_PORT_ARB/CACHE_PORT_ARB.sv",
+        "CPU/CPU_CACHE/CPU_CACHE/CPU_CACHE.sv",
+        "CPU/CPU_MMU/MMU_PMP/MMU_PMP.sv",
+        "CPU/CPU_MMU/MMU_TLB/MMU_TLB.sv",
+        "CPU/CPU_MMU/MMU_PTW/MMU_PTW.sv",
+        "CPU/CPU_MMU/CORE_MMU/CORE_MMU.sv",
+        "CPU/CPU_CORE/CORE_DEC/CORE_DEC.sv",
+        "CPU/CPU_CORE/CORE_DECOMP/CORE_DECOMP.sv",
+        "CPU/CPU_CORE/CORE_CSR/CORE_CSR.sv",
+        "CPU/CPU_CORE/CORE_MDU/CORE_MDU.sv",
+        "CPU/CPU_CORE/CORE_FRF/CORE_FRF.sv",
+        "CPU/CPU_FPU/FPU_ROUND/FPU_ROUND.sv",
+        "CPU/CPU_FPU/FPU_PIPE/FPU_PIPE.sv",
+        "CPU/CPU_CORE/CORE_RF/CORE_RF.sv",
+        "CPU/CPU_CORE/CORE_BTB/CORE_BTB.sv",
+        "CPU/CPU_CORE/CORE_IFU/CORE_IFU.sv",
+        "CPU/CPU_CORE/CORE_EXU/CORE_EXU.sv",
+        "CPU/CPU_CORE/CORE_LSU/CORE_LSU.sv",
+        "CPU/CPU_CORE/CPU_CORE/CPU_CORE.sv",
+        "CPU/CPU_CLINT/CPU_CLINT.sv",
+        "CPU/CPU_PLIC/CPU_PLIC.sv",
+        "CPU/CPU_MMIO/CPU_MMIO.sv",
+        "BUS/BUS_ARB/BUS_ARB.sv",
+        "BUS/AXI4_ADDR_NARROW/AXI4_ADDR_NARROW.sv",
+        "BUS/AXIL_ADDR_NARROW/AXIL_ADDR_NARROW.sv",
+        "BUS/AXI4_RAM/AXI4_RAM.sv",
+        "BUS/AXIL_RAM/AXIL_RAM.sv",
+        "CPU/CPU_DMA/DMA_CACHE.sv",
+        "CPU/CPU_BFM/CPU_BFM.sv",
+        "CPU/CPU_TOP/CPU_TOP.sv",
+        "TOP/TOP.sv",
+    ],
+)
+
+filegroup(
+    name = "fpu_pipe_srcs",
+    # do not sort
+    srcs = [
+        "CPU/CPU_FPU/FPU_ROUND/FPU_ROUND.sv",
+        "CPU/CPU_FPU/FPU_PIPE/FPU_PIPE.sv",
+    ],
+)
+
+filegroup(
+    name = "l2_srcs",
+    # do not sort
+    srcs = [
+        "CPU/CPU_CACHE/CACHE_DATA_ARRAY/CACHE_DATA_ARRAY.sv",
+        "CPU/CPU_L2/L2_TAG_ARRAY.sv",
+        "CPU/CPU_L2/CPU_L2.sv",
+    ],
+)

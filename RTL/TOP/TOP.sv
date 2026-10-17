@@ -67,10 +67,10 @@ module TOP
             // VCO = 100MHz * 10 = 1000MHz
             MMCME2_BASE
                 #(
-                    .CLKIN1_PERIOD    (10.0),
+                    .CLKIN1_PERIOD    (10),
                     .DIVCLK_DIVIDE    (1),
-                    .CLKFBOUT_MULT_F  (10.0),
-                    .CLKOUT0_DIVIDE_F (1000.0 / SYS_CLK_MHZ)
+                    .CLKFBOUT_MULT_F  (10),
+                    .CLKOUT0_DIVIDE_F (1000 / SYS_CLK_MHZ)
                 )
             u_mmcm
                 (
